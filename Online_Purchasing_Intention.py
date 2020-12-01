@@ -25,7 +25,7 @@ def main():
     
     if st.button("Predict"):
         output=predict(Administrative,Administrative_Duration,ProductRelated,ExitRates, PageValues)
-        st.success('The probability of making revenue is {0:.{1}f}%'.format(output * 100,2))
+        st.success('The probability of making revenue from this customer is {0:.{1}f}%'.format(output * 100,2))
 
 
 if __name__=='__main__':
