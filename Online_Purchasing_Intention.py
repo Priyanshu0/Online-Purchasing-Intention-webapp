@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np 
 
-model = pickle.load(open('/Users/priyanshutuli/Desktop/OnlinePurchasingIntention/final_model.pkl','rb'))
+model = pickle.load(open('final_model.pkl','rb'))
 
 def predict(Administrative,Administrative_Duration,ProductRelated,ExitRates, PageValues):
     input_features = np.array([Administrative,Administrative_Duration,ProductRelated,ExitRates, PageValues]).astype(np.float64).reshape(1,-1)
